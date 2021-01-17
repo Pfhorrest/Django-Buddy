@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <h1>Home </h1>
+
+    {% if request.user.is_authenticated %}
+
+    <h5>Welcome {{user.roleId.name}} - {{user}}</h5>
+    <p id="zoom">{{user.zoom}}</p>
+
+    {% endif %}
+
+ {% endblock content %}

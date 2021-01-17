@@ -1,0 +1,118 @@
+body{
+    background-image: url('/static/images/pattern_triangle.png');
+    background-size: contain;
+    background-position: fixed;
+  }
+
+  /* Banner CSS */
+.banner {
+    background-color: #fdcc2d;
+    /* background-color: #fac415 !important; */
+    padding: 5px 10px 5px 10px;
+    height: 50px;
+}
+.login {
+    position: absolute;
+    right: 10px;
+    width: 100px;
+    color: white;
+}
+
+/* Navbar CSS */
+nav {
+    border-bottom: 1px solid #eee;
+}
+li:hover {
+    color: #fdcc2d;
+}
+
+.navbar-brand{
+  font-family: 'Amiko', sans-serif;
+  font-size: 1.5rem;
+  padding-top: .4rem;
+  padding-bottom: .25rem;
+  padding-left: .5em;
+}
+
+.last_item{
+  padding-right: 10px;
+  left: -50px;
+}
+
+/* Footer CSS */
+footer {
+  padding: 40px;
+  border-top: 1px solid #eee;
+  /* background-color: white; */
+}
+
+p {
+    color: rgb(167, 167, 167);
+}
+#contact {
+    width: 200px;
+}
+.icon-group {
+    color: #fdcc2d;
+    display: inline;
+    margin: 15px 15px 15px 15px;
+    padding: 75px 75px 75px 75px;
+}
+.icon {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/*Custom card headers*/
+.custom_bg_blue{
+  background-color: #0dcaf0;
+}
+
+
+.main_content{
+  padding: 1.5rem;
+  min-height: 100vh;  
+}
+
+
+
+tbody, td, tfoot, th, thead, tr{
+  vertical-align: middle;
+}
+
+.search{
+  width: 50%;
+  display: inline-block;
+}
+
+.fixed-width{
+  width: 75px;
+}
+
+.check_role{
+  width: 40px;
+  height: 40px;
+}
+
+.label_role{
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.error{
+  color: red;
+}
+
+.no-bullets {
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
+  
+}
+
+.grades{
+  display: inline;
+}

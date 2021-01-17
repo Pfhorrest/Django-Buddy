@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="row">
+  <div class="col-lg-6 col-md-8 col-sm-10 mx-auto">
+    <div class="card mx-auto">
+      <div class="card-header custom_bg_blue">
+        <h1 class="h3 mb-3 w-100 text-center fw-bold mt-2">Sign In !</h1>
+      </div>
+      <div class="card-body">
+        <div class="row m-3">
+          <div class="col mx-auto">
+
+            <form method="POST">
+              {% csrf_token %}
+              <div class="my-3">
+                <div class="grid">
+                  <label for="id_username" class="visually-hidden">Username</label>
+                  <input type="text" id="id_username" name="username" class="form-control" placeholder="Username" required autofocus>
+                </div>
+              </div>
+
+              <div class="my-3">
+                <label for="id_password" class="visually-hidden">Password</label>
+                <input type="password" id="id_password" name="password" class="form-control" placeholder="Password" required>
+              </div>
+
+              <button class="w-100 btn btn-lg btn-primary my-3" type="submit">Let's Go !</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-footer">
+        <div class="card pt-3">
+
+          <h4 class="text-center pb-3">For new users</h4>
+          <a class="btn btn-secondary m-2" href="{% url 'register' %}"> Register an account </a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}
