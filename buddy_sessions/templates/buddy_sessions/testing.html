@@ -1,0 +1,164 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title></title>
+</head>
+<body>
+
+
+    <div class="p-5">
+        <div>
+            <h5 class="pt-5"> Request User </h5>
+            {% if request.user %}
+                <div>
+                    <label>request.user = </label>
+                    <text>{{request.user}}</text>                    
+                <div>
+
+                <div>
+                    <label>request.user.username =</label>
+                    <text>{{request.user.username}}</text>                    
+                <div>
+
+                <div>
+                    <label>request.user.zoom =</label>
+                    <text>{{request.user.zoom}}</text>                    
+                <div>
+
+            {% else %}
+                <text>None</text>
+
+            {% endif%}
+
+
+        </div>
+    <h5 class="pt-5"> Students with Active Sessions </h5>
+    <div class="container">
+        <div class ="row ">
+            <div class="col-sm">
+                
+                <div id="Students">
+                    {% if students%}
+                        {% for student in students %}
+                        <div class="card p-3">
+                            <div>
+                                <label>student.id = </label>
+                                <text>{{student.id}}</text>  
+                            </div>
+                            <div>
+                            <label>student.username = </label>
+                                <text>{{student.username}}</text> 
+                        </div>
+                            <div>
+                            <label>student.zoom = </label>
+                                <text>{{student.zoom}}</text> 
+                        </div>
+                        </div>
+                        {% endfor %}
+                    {% else %}
+                        <text>No Students</text>
+                    {% endif%}    
+                </div>
+            </div>
+            <div class="col-sm">
+                <button> Logout All Students</button>
+                
+            </div>
+        </div>
+    </div>
+
+
+<h5 class="pt-5"> Volunteers with Active Sessions </h5>
+    <div class="container">
+        <div class ="row ">
+            <div class="col-sm">
+        <div id="Volunteers">
+
+            {% if volunteers %}
+           
+                {% for volunteer in volunteers %}
+                 <div class="card p-3">
+                    <div>
+                        <div>
+                                <label>volunteer.id = </label>
+                                <text>{{volunteer.id}}</text>  
+                            </div>
+                            <div>
+                                <label>volunteer.username = </label>
+                                <text>{{volunteer.username}}</text>  
+                            </div>
+                            <div>
+                                <label>volunteer.zoom = </label>
+                                <text>{{volunteer.zoom}}</text>  
+                            </div>
+
+                    </div>
+                    </div>
+                {% endfor %}
+            
+            {% else %}
+                <text>No Volunteers</text>
+            {% endif%}   
+        </div>
+    </div>
+         <div class="col-sm">
+                <button> Logout All Volunteers</button>
+                
+            </div>
+        </div>
+    </div>
+
+
+<h5 class="pt-5"> Staff with Active Sessions </h5>
+    <div class="container">
+        <div class ="row ">
+            <div class="col-sm">
+        
+        <div id="Staff">
+            {% if staff %}
+            
+                {% for emp in staff %}
+                <div class="card p-3">
+                    <div>
+                        <div>
+                                <label>emp.id = </label>
+                                <text>{{emp.id}}</text>  
+                            </div>
+                            <div>
+                                <label>emp.username = </label>
+                                <text>{{emp.username}}</text>  
+                            </div>
+                            <div>
+                                <label>emp.zoom = </label>
+                                <text>{{emp.zoom}}</text>  
+                            </div>
+                    </div>
+                    </div>
+                {% endfor %}
+            
+            {% else %}
+                <text>No Staff</text>
+            {% endif%}   
+        </div>
+    </div>
+    <div class="col-sm">
+                <button> Logout All Staff </button>
+                
+            </div>
+        </div>
+    </div> 
+</div>
+<script type="text/javascript">
+    
+</script>
+
+</body>
+</html>
+
+
+

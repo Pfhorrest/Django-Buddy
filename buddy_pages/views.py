@@ -1,7 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
-# Create your views here.
-
+# Home screen view
 def home_screen_view(request, *args, **kwargs):
 	context = {}
 	context['page_title'] = "Home"
@@ -9,7 +8,6 @@ def home_screen_view(request, *args, **kwargs):
 	user = request.user
 
 	if user.is_authenticated:
-		print(user.first_name)
 		context['user'] = user
 
 	return render(request, "buddy_pages/home.html", context)

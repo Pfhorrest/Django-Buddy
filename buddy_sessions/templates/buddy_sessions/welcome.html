@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    {% if request.user.is_authenticated %}
+
+    <h5>Welcome {{user.roleId.name}} - {{user}}</h5>
+    <p id="zoom">Zoom: {{user.zoom}}</p>
+
+    {% endif %}
+
+
+    <div class="container-fluid">
+    	<div class="text-center">
+
+    		<div>
+    			<h1 class="py-3"> Are you Ready?</h1>
+    			<h5 class="py-3"> We are excited to have you! </h5>
+    			<h5 class="py-3"> Join the session when you are ready to start today's adventure.</h5>
+    		</div>
+    		<form class="pt-3" action = "" method = "post"> 
+    						{% csrf_token %} 
+    			<input type="hidden" name="sessionID" id="id_sessionID" value="{{form.initial.sessionID}}">
+				<input type="hidden" name="userID" id="id_userID" value="{{form.initial.userID}}">
+
+				<button class="btn btn-primary btn-lg" type="submit"> Join the Session </button>
+
+			</form> 
+    	</div>
+    </div>
+
+
+
+
+
+
+ {% endblock content %}

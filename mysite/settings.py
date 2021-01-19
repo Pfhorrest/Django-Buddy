@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'account',
     'buddy_admin',
     'buddy_pages',
+    'buddy_sessions',
 
     #Django Apps
     'django.contrib.admin',
@@ -49,6 +50,15 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken', 
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_FILTER_BACKENDS': [
+        'django_filters.rest_framework.DjangoFilterBackend'
+    ],
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ],
+}
 
 AUTH_USER_MODEL = 'account.CustomUser'
 
@@ -97,16 +107,7 @@ DATABASES = {
     }
 }
 
-STATICFILES_DIRS = [
-    BASE_DIR / "static",
-    BASE_DIR / "media",
-]
 
-STATIC_URL = '/static/'
-MEDIA_URL = '/media/'
-STATIC_ROOT = BASE_DIR / 'static_cdn'
-MEDIA_ROOT = BASE_DIR / 'media_cdn'
-TEMP = BASE_DIR / 'temp'
 
 
 
@@ -146,4 +147,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
+
 STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR / 'static_cdn'
+

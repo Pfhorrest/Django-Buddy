@@ -2,7 +2,13 @@ body{
     background-image: url('/static/images/pattern_triangle.png');
     background-size: contain;
     background-position: fixed;
+    min-height:100vh;
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content:space-between;
   }
+
+  
 
   /* Banner CSS */
 .banner {
@@ -71,48 +77,18 @@ p {
   background-color: #0dcaf0;
 }
 
+/*Home */
+
+.home_buttons{
+  width: 125px;
+}
+
+.home_welcome{
+  background-color: #8cdbeb;
+
+}
 
 .main_content{
   padding: 1.5rem;
-  min-height: 100vh;  
-}
-
-
-
-tbody, td, tfoot, th, thead, tr{
-  vertical-align: middle;
-}
-
-.search{
-  width: 50%;
-  display: inline-block;
-}
-
-.fixed-width{
-  width: 75px;
-}
-
-.check_role{
-  width: 40px;
-  height: 40px;
-}
-
-.label_role{
-  padding-left: 10px;
-  padding-top: 10px;
-}
-
-.error{
-  color: red;
-}
-
-.no-bullets {
-  list-style-type: none; 
-  padding: 0; 
-  margin: 0; 
-  
-}
-
-.grades{
-  display: inline;
+  flex: 1 1 auto; 
 }

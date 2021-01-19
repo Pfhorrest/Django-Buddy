@@ -2,14 +2,45 @@
 {% load static %}
 
 {% block content %}
-
-    <h1>Home </h1>
-
+<!-- 
     {% if request.user.is_authenticated %}
 
     <h5>Welcome {{user.roleId.name}} - {{user}}</h5>
-    <p id="zoom">{{user.zoom}}</p>
+    <p id="zoom">Zoom: {{user.zoom}}</p>
 
-    {% endif %}
+    {% endif %} -->
+
+
+    <div class="container-fluid">
+    	<div class="text-center">
+
+    		<div class="home_welcome card p-5">
+    			<h1 class=""> Welcome to eBookBuddy!</h1>
+    			<h5 class="pt-3"> It's great to see you. </h5>			
+    		</div>
+
+            {% if not request.user.is_authenticated %}
+
+            <div class="row mt-5 w-75 mx-auto">
+                <div class="col">
+                    <a class="btn btn-info btn-lg home_buttons" href="{% url 'login' %}">Login</a>
+                </div>
+
+                <div class="col">
+                    <a class="btn btn-info btn-lg home_buttons" href="{% url 'register' %}">Register</a>
+                    
+                </div>                
+            </div>
+            {% else %}
+            <div class="row mt-5 w-75 mx-auto">
+
+                <div class="col">
+                    <a class="btn btn-info btn-lg home_buttons" href="{% url 'buddy_sessions:welcome' %}">Back to Welcome Page</a>
+                </div>
+            </div>
+
+            {% endif %}
+    	</div>
+    </div>
 
  {% endblock content %}

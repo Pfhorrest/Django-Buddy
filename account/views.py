@@ -7,7 +7,7 @@ from django.contrib.auth.models import Group
 import json
 
 
-# Create your views here.
+#Login in view
 def login_view(request):
 	context = {}
 	context['page_title'] = "Login"
@@ -29,7 +29,7 @@ def login_view(request):
 				login(request, user)
 
 				if user.is_authenticated:
-					return redirect('/')
+					return redirect('/sessions/welcome/')
 				else:
 					print("Not authenticated")
 
@@ -43,19 +43,18 @@ def login_view(request):
 
 	return render(request, "account/login.html", context)
 
-
+#Logout view
 def logout_view(request):
     logout(request)
     return redirect('/')
 
 
 
-
+#Register view
 def register_view(request, *args, **kwargs):
 	context = {}
 	context['page_title'] = "Register"	
 	user = request.user
-
 
 	roles = Role.objects.all()
 	context['roles'] = roles
@@ -76,5 +75,3 @@ def register_view(request, *args, **kwargs):
 	context['form'] = form	
 
 	return render(request, "account/register.html", context)
-
-    
