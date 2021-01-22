@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!--Custom Style -->
+  <link rel="stylesheet" href="/static/css/style.css">
+
+
+
+  <!-- Page Title -->
+  <title>Login</title>
+
+
+
+
+	 <!-- Banner Code -->
+    <div class="banner">
+
+		
+
+         	<a class="btn btn-info rounded login" href="/login/">Login</a>
+
+        
+      
+    </div>
+	
+
+
+
+    <!-- Navbar Code -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">eBookBuddy</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="https://www.ebookbuddy.org/">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="https://www.ebookbuddy.org/about_us"
+                >ABOUT US</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                JOIN US
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="https://www.ebookbuddy.org/join#VolunteerOpportunity">Volunteer</a></li>
+                <li><a class="dropdown-item" href="https://www.ebookbuddy.org/program#Students">Students</a></li>
+              </ul>
+            </li>
+
+
+             <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                PROGRAM INFO
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="https://www.ebookbuddy.org/program-info">Program Info</a></li>
+                <li><a class="dropdown-item" href="https://www.ebookbuddy.org/programa">Información del programa</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="https://www.ebookbuddy.org/gallery"
+                >GALLERY</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                RESOURCE
+              </a>
+              <ul class="dropdown-menu last_item" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="https://www.ebookbuddy.org/volresources">Volunteers</a></li>
+                <li><a class="dropdown-item" href="https://www.ebookbuddy.org/team-leaders">Team Leaders</a></li>
+                <li><a class="dropdown-item" href="https://www.ebookbuddy.org/staff">Staff</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+
+
+
+
+<body>
+	
+
+	<div class="main_content">
+
+		
+<div class="row">
+  <div class="col-lg-6 col-md-8 col-sm-10 mx-auto">
+    <div class="card mx-auto">
+      <div class="card-header custom_bg_blue">
+        <h1 class="h3 mb-3 w-100 text-center fw-bold mt-2">Sign In !</h1>
+      </div>
+      <div class="card-body">
+        <div class="row m-3">
+          <div class="col mx-auto">
+
+            <form method="POST">
+              <input type="hidden" name="csrfmiddlewaretoken" value="CnFcOLheuvYQC99vRlLkoiBiPbrkB3oOg1HH8tiQW0kxcsUSJb2KTxXN2rtojoGa">
+              <div class="my-3">
+                <div class="grid">
+                  <label for="id_username" class="visually-hidden">Username</label>
+                  <input type="text" id="id_username" name="username" class="form-control" placeholder="Username" required autofocus>
+                </div>
+              </div>
+
+              <div class="my-3">
+                <label for="id_password" class="visually-hidden">Password</label>
+                <input type="password" id="id_password" name="password" class="form-control" placeholder="Password" required>
+              </div>
+
+              <a class="w-100 btn btn-lg btn-primary my-3" href="/sessions/welcome/">Let's Go !</a>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-footer">
+        <div class="card pt-3">
+
+          <h4 class="text-center pb-3">For new users</h4>
+          <a class="btn btn-secondary m-2" href="/register/"> Register an account </a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+	</div>
+
+	 
+
+ <!-- Footer Code -->
+ <footer class="sticky-bottom bg-light">
+   <div class="mx-auto container">
+     <div class="row">
+       <div class="col-sm">
+         <p>Catalyst Coalition</p>
+         <p>3405 Duluth Pkwy LN NW</p>
+         <p>Duluth, GA 30096</p>
+       </div>
+       <div class="col-sm">
+         <div class="rowOne">
+           <button class="btn btn-warning text-white rounded" id="contact" type="button">
+             Email Us
+           </button>
+         </div>
+         <div class="icon-group">
+           <a><i class="fab fa-facebook-f icon"></i></a>
+           <a><i class="fab fa-instagram icon"></i></a>
+           <a><i class="fab fa-youtube icon"></i></a>
+           <a><i class="fas fa-rss icon"></i></a>
+         </div>
+       </div>
+       <div class="col-sm">
+         <p>www.catalystcoalition.org</p>
+         <p>info@ebookbuddy.org</p>
+         <p>404-512-2222</p>
+       </div>
+     </div>
+   </div>
+ </footer>
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+ <script src="/static/js/client.js" charset="utf-8"></script>
+ </body>
+
+ </html>
+
+	
+</body>
+
+</html>
