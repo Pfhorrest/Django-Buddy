@@ -1,38 +1,39 @@
-body{
-    background-image: url('./../images/pattern_triangle.png');
-    background-size: contain;
-    background-position: fixed;
-    min-height:100vh;
-    display:flex;
-    flex-flow:column nowrap;
-    justify-content:space-between;
-  }
-
-  
-
-  /* Banner CSS */
-.banner {
-    background-color: #fdcc2d;
-    /* background-color: #fac415 !important; */
-    padding: 5px 10px 5px 10px;
-    height: 50px;
+body {
+  background-image: url('./../images/pattern_triangle.png');
+  background-size: contain;
+  background-position: fixed;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
 }
+
+/* Banner CSS */
+.banner {
+  background-color: #fdcc2d;
+  /* background-color: #fac415 !important; */
+  padding: 5px 10px 5px 10px;
+  height: 50px;
+}
+
 .login {
-    position: absolute;
-    right: 10px;
-    width: 100px;
-    color: white;
+  position: absolute;
+  right: 10px;
+  width: 100px;
+  color: white;
 }
 
 /* Navbar CSS */
 nav {
-    border-bottom: 1px solid #eee;
-}
-li:hover {
-    color: #fdcc2d;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 2px 2px #ccc;
 }
 
-.navbar-brand{
+li:hover {
+  color: #fdcc2d;
+}
+
+.navbar-brand {
   font-family: 'Amiko', sans-serif;
   font-size: 1.5rem;
   padding-top: .4rem;
@@ -40,9 +41,114 @@ li:hover {
   padding-left: .5em;
 }
 
-.last_item{
+.last_item {
   padding-right: 10px;
   left: -50px;
+}
+
+/* .nav-item .text-color {
+  color: rgb(167, 167, 167);
+} */
+
+/*Custom card headers*/
+.custom_bg_blue {
+  /* background-color: #0dcaf0; */
+  background-color: #8cdbeb;
+}
+
+/* Home */
+.home_buttons {
+  width: 125px;
+}
+
+.home_welcome {
+  background-color: #8cdbeb;
+
+}
+
+.main_content {
+  padding: 1.5rem;
+  /* min-height: 100vh; */
+  flex: 1 1 auto;
+}
+
+.zoom {
+  background-color: lightgray;
+  text-align: center;
+  margin: 0 1.5rem 0;
+  border: 1px solid black;
+}
+
+.dark {
+  background-color: black;
+}
+
+.signIn {
+  color: black;
+}
+
+/* Login Page */
+.custom-color {
+  background-color: #f857b0;
+  border: none;
+}
+
+/* Register Page */
+.custom-color {
+  background-color: #f857b0;
+  border: none;
+}
+
+/* Staff Exit Page */
+.bullet {
+  list-style-type: none;
+}
+
+/* Student Exit Page */
+#farewell {
+  background-color: lightgrey;
+  width: 600px;
+  border-radius: 20px;
+  margin-top: 50px;
+}
+
+/* Survey Page */
+#survey {
+  background-color: lightgrey;
+  width: 600px;
+  height: 370px;
+  border-radius: 20px;
+  margin-top: 40px;
+}
+
+.question {
+  padding: 5px;
+}
+
+#submitButton {
+  margin-top: 5px;
+}
+
+/* Volunteer Exit Page */
+#goodbye {
+  background-color: lightgrey;
+  width: 600px;
+  height: 300px;
+  border-radius: 20px;
+  margin-top: 50px;
+}
+
+#joinButton {
+  margin-top: 5px;
+}
+
+/* Welcome Page */
+#welcome {
+  background-color: lightgrey;
+  width: 600px;
+  height: 300px;
+  border-radius: 20px;
+  margin-top: 50px;
 }
 
 /* Footer CSS */
@@ -53,56 +159,22 @@ footer {
 }
 
 p {
-    color: rgb(167, 167, 167);
+  color: rgb(167, 167, 167);
 }
+
 #contact {
-    width: 200px;
+  width: 200px;
 }
+
 .icon-group {
-    color: #fdcc2d;
-    display: inline;
-    margin: 15px 15px 15px 15px;
-    padding: 75px 75px 75px 75px;
+  color: #fdcc2d;
+  display: inline;
+  margin: 15px 15px 15px 15px;
+  padding: 75px 75px 75px 75px;
 }
+
 .icon {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
 }
-
-
-
-/*Custom card headers*/
-.custom_bg_blue{
-  background-color: #0dcaf0;
-}
-
-/*Home */
-
-.home_buttons{
-  width: 125px;
-}
-
-.home_welcome{
-  background-color: #8cdbeb;
-
-}
-
-.main_content{
-  padding: 1.5rem;
-  flex: 1 1 auto; 
-}
-
-
-
-.zoom{
-  background-color: lightgray;
-  text-align: center;
-  margin: 0 1.5rem 0;
-  border: 1px solid black;
-}
-
-.dark{
-  background-color: black;
-}
-
