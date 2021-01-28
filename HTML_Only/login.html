@@ -22,6 +22,9 @@
   <!-- Page Title -->
   <title>Home</title>
 
+</head>
+<body>
+
   <!-- Banner Code -->
   <div class="banner">
     <a class="btn btn-info rounded login" href="login.html">Login</a>
@@ -85,7 +88,6 @@
     </div>
   </nav>
 
-<body>
   <div class="main_content">		
     <div class="row">
       <div class="col-lg-6 col-md-8 col-sm-10 mx-auto">
@@ -94,49 +96,42 @@
             <h1 class="h3 mb-3 w-100 text-center fw-bold mt-2">Sign In!</h1>
           </div>
           <div class="card-body">
-            <div class="row m-3">
-              <div class="col mx-auto">
-
-                <form method="POST">
-                  <div class="my-3">
-                    <div class="grid">
-                      <label for="id_username" class="visually-hidden">Username</label>
-                      <input type="text" id="id_username" name="username" class="form-control" placeholder="Username" required autofocus>
-                    </div>
-                  </div>
-
-                  <div class="my-3">
-                    <label for="id_password" class="visually-hidden">Password</label>
-                    <input type="password" id="id_password" name="password" class="form-control" placeholder="Password" required>
-                  </div>
-                  <div>                 
-                        <p>
-                          error messages
-                        </p>
-                    
-                        <p>
-                          error messages
-                        </p>                
-                  </div>
-
-                  <a class="w-100 btn btn-lg btn-warning my-3" href="welcome.html">Submit!</a>
-                </form>
+            <form method="POST">
+              <div class="my-3">
+                <label for="id_username" class="visually-hidden">Username</label>
+                <input type="text" id="id_username" name="username" class="form-control" placeholder="Username" required autofocus>
               </div>
-            </div>
-          </div>
-
-          <div class="card-footer">
-            <div class="card pt-3">
-
-              <h4 class="text-center pb-3">New Users</h4>
-              <a class="btn btn-secondary custom-color m-2" href="register.html">Register Here</a>
-
-            </div>
+              <div class="my-3">
+                <label for="id_password" class="visually-hidden">Password</label>
+                <input type="password" id="id_password" name="password" class="form-control" placeholder="Password" required>
+              </div>
+              <div>                 
+                <p class="alert alert-warning">
+                  error messages
+                </p>
+                <p class="alert alert-warning">
+                  error messages
+                </p>                
+              </div>
+              <a class="w-100 btn btn-lg btn-warning my-3" href="welcome.html">Submit!</a>
+            </form>
           </div>
         </div>
       </div>
     </div>
-	</div>	 
+    <div class="row">
+      <div class="col-lg-6 col-md-8 col-sm-10 mx-auto">
+        <div class="card mx-auto">
+          <div class="card-header custom_bg_blue">
+            <h2 class="h3 mb-3 w-100 text-center fw-bold mt-2">New Users</h1>
+          </div>
+          <div class="card-body">
+            <a class="w-100 btn btn-lg btn-warning my-3" href="register.html">Register Here</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>	 
 
  <!-- Footer Code -->
  <footer class="sticky-bottom bg-light">

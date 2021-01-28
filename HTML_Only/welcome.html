@@ -22,6 +22,9 @@
   <!-- Page Title -->
   <title>Home</title>
 
+</head>
+<body>
+
   <!-- Banner Code -->
   <div class="banner">
     <a class="btn btn-info rounded login" href="home.html">Logout</a>
@@ -85,28 +88,35 @@
     </div>
   </nav>
 
-<body>
-  <div class="main_content">    
-
-    <h5>Welcome Usertype, Username!</h5>
-
-    <div class="container-fluid" id="welcome">
-    	<div class="text-center">
-
+  <div class="main_content">		
+    <div class="row">
+      <div class="col">
+        <div class="card p-5">
+          <p>Welcome Usertype, Username!</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="card mx-auto">
+          <div class="card-header custom_bg_blue">
+            <h1 class="h3 mb-3 w-100 text-center fw-bold mt-2">Are you Ready?</h1>
+          </div>
+          <div class="card-body">
     		<div>
-    			<h1 class="py-3"> Are you Ready?</h1>
-    			<h5 class="py-3"> We are excited to have you! </h5>
-    			<h5 class="py-3"> Join the session when you are ready to start today's adventure.</h5>
+    			<p class="py-3">We are excited to have you!</p>
+    			<p class="py-3">Join the session when you are ready to start today's adventure.</p>
     		</div>
     		<form class="pt-3" action = "" method = "post">
-    			<input type="hidden" name="sessionID" id="id_sessionID" value="1">
-				  <input type="hidden" name="userID" id="id_userID" value="1">
-				<button class="btn btn-primary custom-color btn-lg" type="submit">Join the Session</button>
-
+              <input type="hidden" name="sessionID" id="id_sessionID" value="1">
+              <input type="hidden" name="userID" id="id_userID" value="1">
+              <button class="btn btn-warning btn-lg w-100" type="submit">Join the Session</button>
 			</form> 
-    	</div>
-    </div> 
-	</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 	 
 

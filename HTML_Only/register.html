@@ -22,6 +22,9 @@
   <!-- Page Title -->
   <title>Home</title>
 
+</head>
+<body>
+
   <!-- Banner Code -->
   <div class="banner">
     <a class="btn btn-info rounded login" href="login.html">Login</a>
@@ -85,7 +88,6 @@
     </div>
   </nav>
 
-<body>
   <div class="main_content">
 
     <div class="row">
@@ -153,7 +155,7 @@
               </div>
 
               <div class="my-3">
-                <h6 for="id_roleId fw-bold">I'll be joining as: (required)</h6>
+                <label for="id_roleId fw-bold">I'll be joining as: (required)</label>
 
                 <select name="roleId" class="form-control" id="id_roleId" required>
                   <option value="" selected disabled class="muted">----------</option>
@@ -163,15 +165,14 @@
                 </select>
               </div>
               <div>
-                    <p>
-                      error messages
-                    </p>
-                    
-                    <p>
-                      error messages
-                    </p>
-               </div>
-              <a class="w-100 btn btn-lg btn-primary custom-color my-3" href="login.html">Register Here</a>
+                <p class="alert alert-warning">
+                  error messages
+                </p>
+                <p class="alert alert-warning">
+                  error messages
+                </p>
+              </div>
+              <a class="w-100 btn btn-lg btn-warning my-3" href="login.html">Register Here</a>
             </form>
           </div>
         </div>
